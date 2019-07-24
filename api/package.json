@@ -1,0 +1,16 @@
+{
+  "name": "verbal-chat",
+  "version": "0.0.1",
+  "description": "API for the Verbal Chat app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chaim Eliyah",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.4.2"
+  }
+}
