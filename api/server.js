@@ -6,6 +6,7 @@ const { buildSchema } = require('graphql');
 // GraphQL schema
 // everyone is in a singular general room, unless DM; see not-implemented.js for ideas
 // https://github.com/graphql-dotnet/graphql-dotnet/issues/940
+// TODO: why must data be a string. should I separate this out?
 var schema = buildSchema(`
     type Query {
       filters: [String]
@@ -18,14 +19,14 @@ var schema = buildSchema(`
     type Message {
       id: String
       text: String
-      data: [Byte]
+      data: String
       encoding: String
       userId: String
     },
     type DirectMessage {
       id: String
       text: String
-      data: [Byte]
+      data: String
       encoding: String
       userId: String
       recipientUserId: String
