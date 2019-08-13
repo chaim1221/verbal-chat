@@ -18,7 +18,9 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 COPY ./nginx/conf.d/ /etc/nginx/conf.d/
 
-# make web dirs as necessary
+# make web dirs
+RUN mkdir -p /app/api
+COPY ./ /app/api
 
 # start app ... node server.js
 CMD "/bin/bash"
