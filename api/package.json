@@ -9,7 +9,7 @@
   "author": "Chaim Eliyah",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-graphql": "^0.9.0",
     "graphql": "^14.4.2",
     "mongodb": "^3.3.0-beta2",
